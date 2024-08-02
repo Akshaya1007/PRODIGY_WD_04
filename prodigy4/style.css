@@ -1,0 +1,263 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+.navbar {
+    width: 100%;
+    height: 20%;
+    color: indianred;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+}
+body,.navbar{
+    background: url(Images/bg4.jpg);
+}
+.profile {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.profile img {
+    width: 270px;
+    height: 350px;
+    margin-bottom: 10px;
+    border-radius: 8px; /* Square shape with rounded corners */
+}
+
+.navbar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
+}
+
+.navbar nav ul li.active {
+    background: #4CAF50;
+}
+
+h1{
+    color: aquamarine;
+    font-size: 50px;
+}
+h2{
+    color: gold;
+    text-align: center;
+}
+.profile h2{
+    color:palegoldenrod;
+}
+.profile p{
+    color:salmon;
+}
+
+p{
+    color: burlywood;
+}
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    color: white; /* Default text color for content sections */
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.home {
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+    height: calc(100vh - 60px); /* Adjust height to account for navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: gold;
+}
+
+.home h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.home h3 {
+    font-size: 30px;
+}
+
+h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: red;
+}
+
+.timeline-item {
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-bottom: 70px;
+}
+
+.timeline-item.left .circle {
+    left: calc(50% - 160px); /* Position circles to the left for left items */
+}
+
+.timeline-item.right .circle {
+    left: calc(50% + 15px); /* Position circles to the right for right items */
+}
+
+.circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.circle p {
+    margin: 0;
+    font-weight: bold;
+    padding: 50px;
+}
+
+.circle span {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+    color: chartreuse; /* Text color for span inside circles */
+}
+
+.circle:hover{
+    background-color: whitesmoke;
+}
+
+/* Skills and Projects */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.project img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+}
+.project img:hover{
+    transform: scale(1.1);
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 300px;
+}
+
+.skill {
+    width: 150px;
+    text-align: center;
+}
+
+.skill img:hover{
+    transform: scale(1.1);
+}
+.skill img {
+    width: 200px;
+    height: 200px;
+}
+
+.skill p {
+    margin-top: 10px;
+    
+}
+
+/* Contact Form */
+form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+   
+}
+
+form input, form textarea {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+#about p{
+    font-size: 20px;
+}
